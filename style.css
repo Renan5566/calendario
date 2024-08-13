@@ -1,0 +1,80 @@
+*{
+    margin: 0%;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+}
+.calendar {
+    margin: auto;
+    margin-bottom: 30px;
+    width: 350px;
+    border: 1px solid #000000;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.calendar-header button {
+    background-color: #c9398d;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.calendar-header button:disabled {
+    background-color: #ccc;
+}
+.calendar-header h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+.calendar-grid div {
+    text-align: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+.calendar-grid .day {
+    background-color: #c9398d;
+    color: #fff;
+}
+#introduction {
+    background: #c9398d;
+    height: 100px;
+    margin-bottom: 30px;
+}
+#introduction>h1{
+    vertical-align: middle;
+}
+
+#introduction {
+    background: linear-gradient(238deg, #fd8800, #fd008f, #9700fd, #003dfd, #05c7e6, #4bd58d);
+    background-size: 1200% 1200%;
+    -webkit-animation: rainbow 30s ease infinite;
+    animation: rainbow 30s ease infinite;
+  }
+  @-webkit-keyframes rainbow {
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+  }
+  @keyframes rainbow {
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+  }
